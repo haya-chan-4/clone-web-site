@@ -1,10 +1,550 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
-body {
+html body {
   margin: 0;
   min-height: 100vh;
+}
+
+html body header {
+  background-color: #fff;
+  height: 60px;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body header header-title {
+  height: 50px;
+  width: 100px;
+}
+
+html body header nav {
+  display: block;
+}
+
+html body header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body header nav ul li {
+  display: list-item;
+}
+
+html body header nav ul li a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: #000000;
+}
+
+html body header nav ul li a:hover {
+  color: red;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+html body .main {
+  height: 644px;
+  width: 100%;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .main h2 {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+html body .main h2 span {
+  font-size: 60px;
+}
+
+html body .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5%;
+  margin: 50px;
+}
+
+html body .about img {
+  border-radius: 10px;
+}
+
+html body .about .content {
+  padding-left: 20px;
+}
+
+html body .about .content h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+html body .about .content ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+html body .about .content ul li {
+  margin-left: 30px;
+}
+
+html body .about .content ul li .icon {
+  cursor: pointer;
+}
+
+html body .about .content ul li .icon:hover {
+  fill: #ee798d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+html body .skill {
+  background-color: #f9f9f9;
+  padding: 70px 5%;
+  text-align: center;
+}
+
+html body .skill .skill-title h2 {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+html body .skill .skill-table table {
+  width: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html body .skill .skill-table table tbody {
+  display: table-row-group;
+  border-color: inherit;
+  vertical-align: center;
+}
+
+html body .skill .skill-table table tbody tr {
+  cursor: pointer;
+}
+
+html body .skill .skill-table table tbody tr th {
+  padding: 15px 0;
+  border-bottom: solid 1px #ddd;
+  width: 25%;
+}
+
+html body .skill .skill-table table tbody tr td {
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: solid 1px #ddd;
+}
+
+html body .skill .skill-table table tbody tr .html {
+  background-image: url("../img/html-5.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left 80px center;
+  padding-left: 20px;
+}
+
+html body .skill .skill-table table tbody tr .css {
+  background-image: url("../img/css-3.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left 80px center;
+  padding-left: 20px;
+}
+
+html body .skill .skill-table table tbody tr .js {
+  background-image: url("../img/javascript.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left 80px center;
+  padding-left: 20px;
+}
+
+html body .skill .skill-table table tbody tr .vue {
+  background-image: url("../img/vue.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left 80px center;
+  padding-left: 20px;
+}
+
+html body .skill .skill-table table tbody tr .nuxt {
+  background-image: url("../img/nuxt-icon.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left 80px center;
+  padding-left: 20px;
+}
+
+html body .skill .skill-table table tbody tr .firebase {
+  background-image: url("../img/firebase.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left 80px center;
+  padding-left: 20px;
+}
+
+html body .skill .skill-table table tbody tr .node {
+  background-image: url("../img/nodejs.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left 80px center;
+  padding-left: 20px;
+}
+
+html body .work {
+  padding: 70px 5%;
+  text-align: center;
+}
+
+html body .work .work-title h2 {
+  padding: 70px 5%;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+html body .work .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body .work .container .content {
+  width: 32%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #dcdcdc;
+  text-align: left;
+}
+
+html body .work .container .content img {
+  width: 100%;
+}
+
+html body .work .container .content .detail {
+  padding: 10px 20px;
+}
+
+html body .work .container .content .detail p {
+  font-size: 14px;
+  margin: 14px 0;
+}
+
+html body .work .container .content .detail .modal {
+  border-bottom: 1px dashed #000;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+html body .work .container .content .detail .modal:hover {
+  color: red;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+html body .work .container .content .detail .work-number {
+  font-size: 22px;
+  text-align: right;
+}
+
+html body .career {
+  background-color: #f9f9f9;
+  padding: 70px 5%;
+  text-align: center;
+}
+
+html body .career .career-title h2 {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 40px;
+  padding: 70px 5%;
+  text-align: center;
+}
+
+html body .career .career-container .career-line-left-content {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s;
+  border-right: 2px dashed #cfcdcd;
+}
+
+html body .career .career-container .career-line-left-content .period {
+  color: #f14c4c;
+}
+
+html body .career .career-container .career-line-left-content:hover .career-content1, html body .career .career-container .career-line-left-content:hover .career-content2, html body .career .career-container .career-line-left-content:hover .career-content3 {
+  border: 2px dashed #cfcdcd;
+}
+
+html body .career .career-container .career-line-left-content:hover .career-content1 h3, html body .career .career-container .career-line-left-content:hover .career-content2 h3, html body .career .career-container .career-line-left-content:hover .career-content3 h3 {
+  color: #f14c4c;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+html body .career .career-container .career-line-left-content .career-content1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  text-align: right;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+html body .career .career-container .career-line-left-content .career-content3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  text-align: right;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+html body .career .career-container .career-line-left-content .sideline {
+  width: 20%;
+  height: 60px;
+  border-bottom: 2px dashed #cfcdcd;
+}
+
+html body .career .career-container .first ::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #cfcdcd;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0 0 0 2px #cfcdcd;
+          box-shadow: 0 0 0 2px #cfcdcd;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  right: -11px;
+  top: -10px;
+}
+
+html body .career .career-container .last ::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #cfcdcd;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0 0 0 2px #cfcdcd;
+          box-shadow: 0 0 0 2px #cfcdcd;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  right: -11px;
+  bottom: 0px;
+}
+
+html body .career .career-container .career-line-right-content {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s;
+  border-right: 2px dashed #cfcdcd;
+  margin: 0 0 0 auto;
+  border-right: none;
+  border-left: 2px dashed #cfcdcd;
+}
+
+html body .career .career-container .career-line-right-content .period {
+  color: #f14c4c;
+}
+
+html body .career .career-container .career-line-right-content:hover .career-content1, html body .career .career-container .career-line-right-content:hover .career-content2, html body .career .career-container .career-line-right-content:hover .career-content3 {
+  border: 2px dashed #cfcdcd;
+}
+
+html body .career .career-container .career-line-right-content:hover .career-content1 h3, html body .career .career-container .career-line-right-content:hover .career-content2 h3, html body .career .career-container .career-line-right-content:hover .career-content3 h3 {
+  color: #f14c4c;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+html body .career .career-container .career-line-right-content .career-content2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  text-align: left;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+html body .career .career-container .career-line-right-content .sideline {
+  width: 20%;
+  height: 60px;
+  border-bottom: 2px dashed #cfcdcd;
+}
+
+html body .contact {
+  width: 45%;
+  margin: 0 auto;
+}
+
+html body .contact .contact-title {
+  padding: 70px 5%;
+  text-align: center;
+}
+
+html body .contact .contact-title h2 {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+html body .contact form label .red {
+  color: red;
+}
+
+html body .contact form input {
+  width: 100%;
+  height: 50px;
+  background-color: #E9CDC1;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 40px;
+}
+
+html body .contact form textarea {
+  width: 100%;
+  height: 200px;
+  background-color: #E9CDC1;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 40px;
+}
+
+html body .contact label .red {
+  color: red;
+}
+
+html body .contact button {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  border-radius: 30px;
+  margin: 40px auto 40px auto;
+  border-style: none;
+  height: 50px;
+  width: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+html body .contact button:hover {
+  background-color: #ee798d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+html body footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #000;
+  height: 150px;
+  color: #fff;
+}
+
+html body footer .footer-icon {
+  text-align: center;
+  margin: 0 auto;
+}
+
+html body footer .footer-icon ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 16px 0;
+  padding-top: 30px;
+}
+
+html body footer .footer-icon ul .icon {
+  margin-right: 20px;
+  cursor: pointer;
+  fill: #fff;
+}
+
+html body footer .footer-icon ul .icon:hover {
+  fill: #ee798d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
